@@ -5,14 +5,15 @@
     <head> <!--Cabecera: Información para el navegador-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Messi Goals</title>
+        <title>Messi Skills</title>
         <script></script>
     </head>
     <body><!--Cuerpo del documento (Todos los componentes visibles para el usuario)-->
         <h1>Messi Skills per Season</h1>
         <p>Season 2004-2005</p>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YImAyg-D3_s?si=GXqDVUUbSS2iZX4G&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qeMhL2W5HQ0?si=fWxGt734HxR7HFen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <p>Season 2005-2006</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZykNKYpTDac?si=_Ve9IxbArzpU_FqX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <script>
             console.log("Mi Codigo")
             console.log(10)
@@ -24,7 +25,7 @@
             }
             // Este es un ejemplo de un comentario en una sola linea
             /* 
-Este es un ejemplo de un comentario en js en varias líneas
+Este es un ejemplo de un comentario en varias líneas
             */
            const bigInit = 2323432432432
            bigInit
@@ -35,8 +36,62 @@ Este es un ejemplo de un comentario en js en varias líneas
            console.log(typeof mayor);
            let edad = 27
            console.log(typeof edad, typeof mayor)
-            src= 
+            function square(number){
+                return number*number;
+            }
+           square(2)
+           function validarNumero(Valor){
+            if ( Valor > 0 && typeof Valor !== "Boolean"){
+                console.info("El valor es un numero positivo")
+            } else if (Valor === 0) {
+                console.info("El valor es cero 0")
+            } else if (valor < 0) {
+                console.info("El valor es negativo")
 
+            } else if (typeof Valor === "Boolean") {
+                console.info("El valor no es un numero")
+            } else {
+                console.error("El valor no es un numero")
+            }
+           }
+           validarNumero(1)
+           let ternario = (5 === 3) ? console.loge("Es verdadero") : console.log("Es Falso")
+           
+
+           function Car(color, brand, year) {
+            this.color = color
+            this.brand = brand
+            this.year = year
+           }
+
+           let Car1 = new Car("Red", "Audi",2021)
+           console.log(Car1.color, Car1.brand, Car1.year)
+
+           function MyFunction(param){
+            // aqui se ejecuta el codigo
+            console.log("Normal Function")
+           }
+           
+           let ArrowFunction = () => {
+            // aqui se ejecuta el codigo
+            console.log("Arrow Function and Anonym")
+           }
+
+           let funcion_anonima_normal = function(){
+                console.log("Esta es una función no de flecha")
+           }
+
+        let global = "Esta es una variable global"
+        {
+        let variableLocal = "Variable Local" ;
+        console.log(global)
+        console.log(variableLocal)
+        }
+           MyFunction();
+           ArrowFunction();
+            setInterval(() => {
+            console.log("Ejecutando un setInterval, esto se ejecuta indefinidaente cada cierto intervalo de tiempo");
+            }, 1000);
         </script>
     </body>
 </html>

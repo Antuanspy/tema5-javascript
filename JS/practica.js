@@ -1,5 +1,3 @@
-let my_name = "Antonio";
-
-my_name
-
-let birthday_year = 1997
+for (let numero = 0; numero <= 7; numero = numero + 1) {
+    console.log(numero);
+  }
